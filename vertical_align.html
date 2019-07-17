@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Typography Matters</title>
+    <style type="text/css" media="screen">
+      body {
+        padding: 0;
+        margin: 64px;
+      }
+
+      .type-wrapper {
+        width: intrinsic;
+        margin: auto;
+      }
+
+      .type-inter {
+        font-family: Inter, sans-serif;
+      }
+
+      .type-zapfino {
+        font-family: Zapfino, sans-serif;
+      }
+
+      .type-inter .content {
+        font-feature-settings: "salt" 1, "zero" 1, "tnum" 1;
+      }
+
+      .content .super {
+        font-feature-settings: "sups";
+      }
+
+      .content .sub {
+        font-feature-settings: "subs";
+      }
+
+      .content {
+        font-size: 64px;
+        font-weight: bold;
+
+        margin-bottom: 32px;
+
+        text-decoration: underline overline;
+      }
+
+      .type-name {
+        color: #909090;
+      }
+
+      .icon {
+        vertical-align: baseline;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="type-wrapper">
+      <div class="type type-inter">
+        <h3 class="type-name">Inter & Zapfino</h3>
+        <p class="content">Singing<span class="super">1</span><img class="icon" src="icon.svg"></p>
+        <p class="content type-zapfino">Dancing<span class="super">2</span><img class="icon" src="icon.svg"></p>
+        <p class="content">Rapping<span class="sub">3</span><img class="icon" src="icon.svg">&<span class="type-zapfino">Basketball<span class="sub">4</span></span><img class="icon" src="icon.svg"></p>
+      </div>
+    </div>
+  </body>
+</html>
